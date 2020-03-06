@@ -9,33 +9,13 @@ $bp-xlarge: 1199px; */
 
 .galleryGrid {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-gap: 8px;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-gap: 8px; 
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
-    /* @include bp( x-small ) {
-      grid-template-columns: repeat(1, 1fr);
-    }	  
-    @include bp( small ) {
-      grid-template-columns: repeat(2, 1fr);
-    }	
-    @include bp( large ) {
-      grid-template-columns: repeat(5, 1fr);
-    }	 */
     img {
-      width: 100%;
-      border: 5px solid #fff;
+      width: 90%;
+      border: 5px solid #fefefe;
     }
-  
-/* 
-  .image{
-    height: 10;
-    width: 10;
-  } */
-  .modal{
-    height: 200;
-    width: 200;
-    border-width: 1;
-  }
