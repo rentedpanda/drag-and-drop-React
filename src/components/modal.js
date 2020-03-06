@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-// import ReactDOM from 'react-dom'
-// import styles from "../assets/styles.module.css"
 import Modal from "react-modal"
 ////////////////////////////////// Modal position/////////////////////////////////
 const customStyles = {
@@ -30,14 +28,13 @@ export class modal extends Component {
         return (
             <div >
                 <Modal
-                    // className={styles.modal}
                     style={customStyles}
                     isOpen={this.props.show}
                     contentLabel="Example"
                     appElement={document.getElementById('root')}
                 >
                     <div style={jss.modalContent}>
-                        <span style={jss.text}>Confirm?</span> <br />
+                        <span style={jss.text}>Do you want to replace the image?</span> <br />
                         <button onClick={this.props.done} style={jss.btn}>ok</button>
                         <button onClick={this.props.cancel} style={jss.btn}>cancel</button>
                     </div>
@@ -68,7 +65,7 @@ const jss = {
         border: "none"
     },
     text: {
-        fontSize: 20
+        fontSize: 20,
     }
 }
 
